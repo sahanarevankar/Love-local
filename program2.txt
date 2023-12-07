@@ -1,0 +1,23 @@
+Initialization: Initialize two candidate elements (candidate1 and candidate2) and their corresponding counters (count1 and count2) to None and 0.
+
+First Pass - Find potential candidates: Iterate through the list (nums). For each element:
+
+If it matches candidate1, increment count1.
+If it matches candidate2, increment count2.
+If count1 is 0, set candidate1 to the current element, and set count1 to 1.
+If count2 is 0, set candidate2 to the current element, and set count2 to 1.
+If neither of the above conditions is met, decrement count1 and count2.
+Second Pass - Check the counts: Iterate through the list again. Count occurrences of candidate1 and candidate2.
+
+Result Compilation: Check if the count of each candidate is greater than ⌊n/3⌋. If yes, add them to the result list.
+
+Return the result list: The function returns a list containing elements that appear more than ⌊n/3⌋ times in the input list.
+
+Algorithm:
+
+Initialize candidate1, count1, candidate2, and count2 to None and 0.
+Iterate through the list to find potential candidates and update their counts.
+Iterate through the list again to count occurrences of potential candidates.
+Check if the counts of candidates exceed ⌊n/3⌋ and add them to the result list.
+Return the result list.
+The provided code takes user input for a list of integers, calls the majority_elements function, and prints the result.

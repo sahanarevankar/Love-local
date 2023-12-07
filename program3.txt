@@ -1,0 +1,20 @@
+Here's the detailed logic:
+
+Initialization: Initialize a counter variable count to 0.
+
+Loop through numbers from 1 to n: Use a for loop to iterate through numbers from 1 to n (inclusive).
+
+Count occurrences of '1': Convert each number to a string (str(i)) and count the occurrences of the digit '1' using the count method.
+
+Update the total count: Add the count of '1's in the current number to the overall count.
+
+Return the final count: After the loop, return the total count.
+
+Algorithm:
+
+Initialize count to 0.
+Loop through numbers from 1 to n.
+For each number, convert it to a string and count the occurrences of '1'.
+Update the total count with the count of '1's in the current number.
+After the loop, return the final count.
+The provided code takes user input for a number, calls the count_digit_one function, and prints the result.
